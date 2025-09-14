@@ -1,29 +1,29 @@
 On the Command Prompt ( As Administrator ) : 
 -----------------------------------------------
 
-WSL --version ( used to update the WSL - Windows Subsystem for Linux )
-
-
-WSL --install ( If not use this to install )
-
-
-WSL --update ( If exists use this to update )
-
 
 docker --version ( To check the version of Docker )
 
 
-docker pull python:3.12 ( Used to pull the python 3.12 compiler from docker hub )
+docker pull debian ( Used to pull the debian compiler from docker hub )
 
 
-docker run -it --name python312 python:3.12 ( used to run the pulled container )
+docker ps -a ( List All Containers )
 
 
-docker pd ( Used to view the process of the container )
+docker run -it debian ( Run the Debian image )
 
 
-docker rm <Container_name> ( To delete the container )
+apt update ( Update apt )
 
 
-docker rmi <Image_id> ( To delete the image file )
+apt install nano ( install nano file editor )
 
+
+apt install python3 ( install python change version as you need )
+
+
+nano fibo.py ( open the file on nano editor )
+
+
+python3 fibo.py ( run python program )
