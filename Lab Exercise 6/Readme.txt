@@ -25,5 +25,20 @@ apt install python3 ( install python change version as you need )
 
 nano fibo.py ( open the file on nano editor )
 
+Code :
+
+def fibonacci_iterative(n):
+    """Generate Fibonacci series up to the nth term using iteration."""
+    sequence = []
+    a, b = 0, 1
+    for _ in range(n):
+        sequence.append(a)
+        a, b = b, a + b
+    return sequence
+
+# Example usage
+n = 10
+print(fibonacci_iterative(n))
+
 
 python3 fibo.py ( run python program )
